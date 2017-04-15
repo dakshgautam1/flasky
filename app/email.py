@@ -8,6 +8,8 @@ def send_async_email(app, msg):
     with app.app_context():
         mail.send(msg)
 
+def hello():
+    return 'Cool'
 
 def send_email(to, subject, template, **kwargs):
     app = current_app._get_current_object()
